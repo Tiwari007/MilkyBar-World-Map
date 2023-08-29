@@ -1,0 +1,185 @@
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    position: relative;
+}
+
+
+.app__background {
+    position: absolute;
+    bottom: 0;
+    left: 50;
+    z-index: -1;
+}
+
+.home__component {
+    height: 600px;
+    max-width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.homeComponent__cameraView {
+    border-radius: 0.4375rem;
+    border: 3px dashed #AFAFAF;
+    background: #343434;
+    height: 60%;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.homeComponent__name {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeComponent__name input {
+    width: 15.8125rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    background: #CFCFCF;
+    box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.homeComponent__name input::placeholder {
+    color: #979797;
+    text-align: center;
+    font-family: Hobeaux;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.05rem;
+}
+
+
+/* ______________________________DASHBOARD___________________________ */
+
+.dashboard__container {
+    min-width: 340px;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 15%;
+}
+
+main {
+    position: relative;
+    margin-left: 66px;
+    margin-top: 44px;
+    height: 70%;
+}
+
+.background__passport {
+    position: absolute;
+    top: -17px;
+    left: -36px;
+}
+
+.passportContainer {
+    position: absolute;
+    top: 25%;
+    width: 337;
+    height: 256;
+    left: 8%;
+}
+
+
+
+
+.passportContainerBack {
+    position: absolute;
+    top: -13px;
+    width: 250px;
+    height: 160px;
+    transform: rotate(13deg);
+    flex-shrink: 0;
+    padding: 20px;
+    display: flex;
+
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(180deg, #FFF 0%, #FAFAFA 20.83%, #EBEBEB 61.98%, #E1E1E1 83.85%, #929292 100%);
+}
+
+.passportContainerBack img {
+    stroke-width: 1px;
+    stroke: var(--navy-blue, #021689);
+    filter: drop-shadow(2px 2px 0px #0394C3);
+}
+
+
+
+.passportContainerFront {
+
+    position: absolute;
+    bottom: -338px;
+    left: -86px;
+}
+
+
+
+.name{
+    color: #021689;
+    font-family: Bebas Neue;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tagName {
+    color: var(--primary-blue-color, #0394C3);
+    /* navy blue drop shadow */
+    text-shadow: 2px 2px 0px #021689;
+    font-family: "Hobeaux Black";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.tagHeadline {
+    color: var(--millybar-yellow, #FAEA18);
+    /* primary blue drop shadow */
+    text-shadow: 2px 2px 0px #0394C3;
+    font-family: "Hobeaux Black";
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    /* 16.5px */
+    text-transform: uppercase;
+}
+
+
+.buttonClass{
+    position: absolute;
+    bottom: 0px;
+}
+
+
+
+
+@media only screen and (max-width: 400px) {
+    .home__component {
+        height: 600px;
+        max-width: 300px;
+    }
+
+    .homeComponent__name {
+        margin-top: 30px;
+    }
+}
